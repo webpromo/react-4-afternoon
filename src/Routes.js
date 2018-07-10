@@ -12,12 +12,15 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 // Import the ClassList component to use as a route.
 import ClassList from './components/ClassList/ClassList.js';
+import Student from './components/Student/Student.js';
 
+ 
 export default (
     <Switch>
         <Route component = { Home } exact path = '/' />
         <Route component = { About } path = '/about' />
         <Route component={ ClassList } path="/classlist/:class" />
+        <Route path="/student/:id" component={Student} />
     </Switch>
 )
 
